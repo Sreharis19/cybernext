@@ -60,6 +60,9 @@ const Features = () => {
 
   return (
     <section id="features" className="features section">
+      <div className="container section-title" data-aos="fade-up">
+        <h2>Services</h2>
+      </div>
       <div className="container">
         <ul className="nav nav-tabs row d-flex" data-aos="fade-up" data-aos-delay="100">
           {tabs.map(tab => (
