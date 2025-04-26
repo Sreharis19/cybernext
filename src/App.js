@@ -3,13 +3,14 @@ import AOS from 'aos';
 import 'aos/dist/aos.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
-
 import './assets/vendor/bootstrap/css/bootstrap.min.css';
 import './assets/vendor/bootstrap-icons/bootstrap-icons.css';
 import './assets/vendor/aos/aos.css';
 import './assets/vendor/glightbox/css/glightbox.min.css';
 import './assets/vendor/swiper/swiper-bundle.min.css';
 import './assets/css/main.css';
+
+import favicon from './assets/img/favicon.png';
 
 import Header from './components/Header';
 import Hero from './components/Hero';
@@ -24,16 +25,34 @@ import ScrollTop from './components/ScrollTop';
 import Preloader from './components/Preloader';
 
 function App() {
+  const sitename = "CyberNext";
+
   useEffect(() => {
+
+    document.title = sitename;
+
+    const setFavicon = (iconPath) => {
+      let link = document.querySelector("link[rel*='icon']");
+      if (!link) {
+        link = document.createElement('link');
+        link.rel = 'shortcut icon';
+        document.head.appendChild(link);
+      }
+      link.href = iconPath;
+    };
+
+    setFavicon(favicon);
+
     AOS.init({
       duration: 1000,
       once: true,
       easing: 'ease-in-out',
     });
-  }, []);
+  }, [sitename]);
+
   return (
     <>
-      <Header />
+      <Header sitename={sitename} />
       <main className="main">
         <Hero />
         <About />

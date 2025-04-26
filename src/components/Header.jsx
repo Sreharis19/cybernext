@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 
-const Header = () => {
+const Header = ({ sitename }) => {
   const [scrolled, setScrolled] = useState(false);
 
   useEffect(() => {
@@ -19,7 +19,7 @@ const Header = () => {
     >
       <div className="container-fluid container-xl position-relative d-flex align-items-center">
         <a href="#hero" className="logo d-flex align-items-center me-auto">
-          <h1 className="sitename">CyberNext</h1>
+          <h1 className="sitename">{sitename}</h1>
         </a>
 
         <nav id="navmenu" className="navmenu">
