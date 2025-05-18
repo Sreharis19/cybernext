@@ -5,89 +5,115 @@ import ModalComponent from './ModalComponent';
 const services = [
   {
     id: 1,
-    icon: 'bi-robot',
-    title: 'AI Agent Building Workshops',
-    description: 'Hands-on sessions teaching how to develop intelligent task agents and virtual assistants, tailored for workplace automation.'
+    icon: 'bi-chat-dots',
+    title: 'Conversational Workflow Initiation',
+    description: 'Trigger automated workflows from natural language inputs using intelligent chat agents.',
+    details: [
+      'Real-time response to incoming messages',
+      'Routing based on intent detection and classification',
+      'Serves as entry point for downstream logic'
+    ]
   },
   {
     id: 2,
     icon: 'bi-gear-wide-connected',
-    title: 'Multi-Agent AI Fusion Solutions',
-    description: 'Collaborative systems combining several AI agents to automate complex workflows across different environments.',
+    title: 'Multi-Agent AI Fusion Framework',
+    description: 'Deploy collaborative AI agents to orchestrate complex operational workflows across systems.',
     details: [
-      'Semi-independent agents making real-time decisions based on context',
-      'Enhanced adaptability in business logic and systems orchestration'
+      'Semi-autonomous decision making across agents',
+      'Real-time orchestration of memory, tools, and models'
     ]
   },
   {
     id: 3,
-    icon: 'bi-clipboard2-pulse',
-    title: 'AI-Based Automation & Workflow Streamlining',
-    description: 'Intelligent automation offerings to streamline IT operations, automate repetitive tasks, and build custom workflows using visual builders.'
+    icon: 'bi-cpu',
+    title: 'Dynamic Task Automation Engine',
+    description: 'Leverage modular AI tools to execute defined tasks with precision and contextual awareness.',
+    details: [
+      'Tool agents for task-specific processing',
+      'Parallelized and sequential task execution models',
+      'Customizable workflows per business logic'
+    ]
   },
   {
     id: 4,
-    icon: 'bi-lightning-charge',
-    title: 'Advanced AI Fusion Capabilities',
+    icon: 'bi-collection',
+    title: 'Persistent Context Memory System',
+    description: 'Maintain memory across sessions to preserve context, state, and intent history.',
     details: [
-      'Contextual Awareness: Multi-agent frameworks adapting to real-time input',
-      'Goal-Oriented Collaboration: Agents negotiating, prioritizing, and co-developing outcomes',
-      'Cross-Domain Integration: Fusion across cybersecurity, healthcare, property, aerospace'
+      'Context retention between workflow steps',
+      'Supports both temporary and long-term memory modes',
+      'Enables richer, more coherent automation'
     ]
   },
   {
     id: 5,
-    icon: 'bi-bezier',
-    title: 'R&D-Driven Innovation Modules',
+    icon: 'bi-diagram-3',
+    title: 'Modular Toolchain Integration',
+    description: 'Attach, remove, or swap workflow tools seamlessly without disrupting core architecture.',
     details: [
-      'AI in Drug Discovery: ML tools for compound screening, predictive modeling, bioinformatics',
-      'Smart Property Management Systems: Predictive maintenance, energy optimization, tenant experience automation',
-      'AI in Satellite Engineering: Enhanced data processing, fault detection, autonomous mission planning'
+      'Plug-and-play support for validation, enrichment, storage, etc.',
+      'Optional agents can be toggled on/off',
+      'Maintains loose coupling across tools'
     ]
   },
   {
     id: 6,
-    icon: 'bi-emoji-smile',
-    title: 'Human Factors & Behaviour Change',
+    icon: 'bi-database-add',
+    title: 'Automated Data Capture & Insertion',
+    description: 'AI agents extract key information and insert into databases or structured knowledge stores.',
     details: [
-      'Behaviour Change',
-      'Co-creation',
-      'Behavioural Economics',
-      'User Personas',
-      'Ethics',
-      'Cognitive & Psychosocial',
-      'Cyberpsychology'
+      'Auto-maps extracted content to schema',
+      'Supports MongoDB, SQL, and cloud storage',
+      'Ensures data persistence and traceability'
     ]
   },
   {
     id: 7,
-    icon: 'bi-shield-lock',
-    title: 'Trust Management that People Embrace',
+    icon: 'bi-patch-check',
+    title: 'Quality Assurance Validation Agent',
+    description: 'An optional QA layer to validate outputs before final delivery or storage.',
     details: [
-      'Risk Management',
-      'Conformity Assessment',
-      'Sectoral Security',
-      'AI Trustworthiness',
-      'Incident Handling',
-      'Self-Audit',
-      'Cybersecurity Training'
+      'Rule-based or model-driven validation',
+      'Supports custom business logic checks',
+      'Can be deactivated without impacting pipeline'
     ]
   },
   {
     id: 8,
-    icon: 'bi-bar-chart-line',
-    title: 'Business & Research Innovation',
+    icon: 'bi-book',
+    title: 'Knowledge Base Enhancement Agent',
+    description: 'An auxiliary tool to enrich workflows using internal or external knowledge repositories.',
     details: [
-      'Business Plans',
-      'Project Management',
-      'Financial Monitoring',
-      'Innovation Research',
-      'Standard & Legislations',
-      'Communication Strategies',
-      'Customized Training'
+      'Pulls relevant knowledge context into workflows',
+      'Improves decision accuracy with reference data',
+      'Supports static and dynamic knowledge bases'
+    ]
+  },
+  {
+    id: 9,
+    icon: 'bi-layers',
+    title: 'Agent Extensibility Layer',
+    description: 'Easily extend or upgrade AI agents within existing architectures without downtime.',
+    details: [
+      'Hot-swappable agents and tools',
+      'Backward-compatible API design',
+      'Supports rapid innovation cycles'
+    ]
+  },
+  {
+    id: 10,
+    icon: 'bi-diagram-2',
+    title: 'End-to-End Workflow Orchestration',
+    description: 'Combine all components into a cohesive automation pipeline powered by AI-driven decision logic.',
+    details: [
+      'Unified control over trigger, memory, tools, and output',
+      'Supports linear, conditional, and parallel workflows',
+      'Full observability across agent interactions'
     ]
   }
 ];
+
 
 const Services = () => {
   const [showModal, setShowModal] = useState(false);
