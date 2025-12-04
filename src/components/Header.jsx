@@ -55,7 +55,7 @@ const Header = ({ sitename }) => {
               src={logoImg}
               alt={sitename || 'NextAIFusion'}
               className="img-fluid"
-              style={{ maxHeight: '40px' }}
+              style={{ maxHeight: '60px' }}
             />
           ) : (
             <h1 className="sitename">{sitename}</h1>
