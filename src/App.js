@@ -1,4 +1,5 @@
 import React, { useEffect } from 'react';
+import { Routes, Route } from 'react-router-dom';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
@@ -24,11 +25,26 @@ import Footer from './components/Footer';
 import ScrollTop from './components/ScrollTop';
 import Preloader from './components/Preloader';
 
+import Courses from './pages/Courses'; // ⬅️ new page
+
+function Home() {
+  return (
+    <main className="main">
+      <Hero />
+      <About />
+      <Clients />
+      <Features />
+      <Services />
+      <Portfolio />
+      <Contact />
+    </main>
+  );
+}
+
 function App() {
-  const sitename = "CyberNext";
+  const sitename = 'NextAI Fusion';
 
   useEffect(() => {
-
     document.title = sitename;
 
     const setFavicon = (iconPath) => {
@@ -53,15 +69,13 @@ function App() {
   return (
     <>
       <Header sitename={sitename} />
-      <main className="main">
-        <Hero />
-        <About />
-        <Clients />
-        <Features />
-        <Services />
-        <Portfolio />
-        <Contact />
-      </main>
+
+      {/* Page content switches here */}
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/courses" element={<Courses />} />
+      </Routes>
+
       <Footer />
       <ScrollTop />
       <Preloader />

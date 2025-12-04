@@ -30,7 +30,7 @@ const Contact = () => {
                 <div className="info-item text-center" data-aos="fade-up" data-aos-delay="400">
                   <i className="bi bi-envelope" style={{ display: 'block', margin: '0 auto' }}></i>
                   <h3>Email Us</h3>
-                  <p>info@nextaifusion.com</p>
+                  <p>admin@nextaifusion.com</p>
                 </div>
               </div>
             </div>
@@ -39,7 +39,7 @@ const Contact = () => {
           <div className="col-lg-6 d-flex align-items-center justify-content-center">
             <div className="section-title text-center">
               <h3 className="display-4">Join Us</h3>
-              <p className="fs-6">Want to partner with us, support the next generation of cyber professionals, or join our programme?</p>
+              <p className="fs-6">Want to collaborate on pilots, bring agentic automation into your organisation, or join our NextAIFusion learning journeys?</p>
             </div>
           </div>
 

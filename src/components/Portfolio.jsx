@@ -6,11 +6,11 @@ const portfolioItems = [
   {
     id: 1,
     img: app1,
-    title: 'Why CyberNext?',
+    title: 'Why NextAIFusion?',
     bullets: [
-      'Endorsed by the Cyber Local Steering Group (East of England)',
-      'Complements national initiatives like CyberFirst by focusing on adult learners',
-      'Delivers scalable, replicable models of inclusive digital training'
+      'Agentic Automation Academy focused on real-world workflows, not just theory',
+      'Built on applied R&D, including Innovate UK–funded SmartAirFusion for SME manufacturers',
+      'Bridges the gap between operations, data and AI by combining product builds with talent development'
     ]
   },
   {
@@ -18,10 +18,10 @@ const portfolioItems = [
     img: app2,
     title: 'Our Impact Goals',
     bullets: [
-      'Equip 30-50 individuals with job-ready cybersecurity skills',
-      'Develop replicable curriculum and toolkits',
-      'Build a sustainable, community-led mentorship network',
-      'Support at least two additional Cyber Local regions within 24 months'
+      'Equip 50+ builders, operators and leaders with agentic automation skills over the next 24 months',
+      'Co-design and deploy pilot workflows that deliver measurable energy, productivity or quality gains',
+      'Create reusable playbooks, templates and toolchains for manufacturing and knowledge-work use cases',
+      'Grow an inclusive community of mentors, partners and alumni who can scale NextAIFusion across sectors and regions'
     ]
   }
 ];
@@ -29,22 +29,27 @@ const portfolioItems = [
 const Portfolio = () => (
   <section id="portfolio" className="portfolio section">
     <div className="container section-title" data-aos="fade-up">
-      <h2>CyberNext Highlights</h2>
-      <p>Discover what sets us apart and where we're headed</p>
+      <h2>NextAIFusion Highlights</h2>
+      <p>What defines our academy, our products, and the impact we&apos;re aiming for.</p>
     </div>
 
     <div className="container">
       <div className="row gy-4 gx-4 justify-content-center">
-        {portfolioItems.map(item => (
+        {portfolioItems.map((item) => (
           <div key={item.id} className="col-md-5" data-aos="fade-up">
             <div
               className="p-4 rounded-4 shadow-sm h-100"
-              style={{ backgroundColor: '#f8f9fa', borderLeft: '4px solid #ff4a17' }}
+              style={{
+                backgroundColor: '#f8f9fa',
+                borderLeft: '4px solid #ff4a17'
+              }}
             >
               <h4 className="fw-semibold">{item.title}</h4>
               <ul className="mt-3 mb-0">
                 {item.bullets.map((b, i) => (
-                  <li key={i} className="text-muted">{b}</li>
+                  <li key={i} className="text-muted">
+                    {b}
+                  </li>
                 ))}
               </ul>
             </div>
