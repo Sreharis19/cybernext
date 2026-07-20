@@ -88,6 +88,11 @@ const Header = ({ sitename }) => {
                 Courses
               </a>
             </li>
+            <li>
+              <a href="/agentforge" onClick={handleNavClick}>
+                AgentForge
+              </a>
+            </li>
           </ul>
 
           {/* Hamburger button */}

@@ -26,6 +26,7 @@ import ScrollTop from './components/ScrollTop';
 import Preloader from './components/Preloader';
 
 import Courses from './pages/Courses'; // ⬅️ new page
+import AgentForge from './pages/AgentForge';
 
 function Home() {
   return (
@@ -74,6 +75,7 @@ function App() {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/courses" element={<Courses />} />
+        <Route path="/agentforge" element={<AgentForge />} />
       </Routes>
 
       <Footer />
