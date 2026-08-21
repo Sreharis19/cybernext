@@ -181,6 +181,16 @@ const AgentForge = () => {
               <div className="d-flex flex-wrap justify-content-center gap-3 mt-4" data-aos="fade-up" data-aos-delay="150">
                 <a href="#solution" className="btn-get-started">See how it works</a>
                 <a href="#contact" className="agentforge-btn-outline">Partner with us</a>
+                <a
+                  href="https://www.rjobs.co.uk"
+                  className="agentforge-hero-portal-link"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <i className="bi bi-briefcase-fill"></i>
+                  Browse live roles on <strong>rjobs.co.uk</strong>
+                  <i className="bi bi-arrow-up-right"></i>
+                </a>
               </div>
             </div>
           </div>
@@ -327,6 +337,65 @@ const AgentForge = () => {
         </div>
       </section>
 
+      {/* JOB PORTAL */}
+      <section id="job-portal" className="agentforge-portal section">
+        <div className="container" data-aos="fade-up">
+          <div className="agentforge-portal-card">
+            <div className="agentforge-portal-glow" aria-hidden="true"></div>
+            <div className="row gy-4 align-items-center position-relative">
+              <div className="col-lg-7">
+                <span className="agentforge-portal-eyebrow">
+                  <i className="bi bi-broadcast"></i> Live Now &mdash; AgentForge Job Portal
+                </span>
+                <h2 className="agentforge-portal-title">
+                  Find your first frontier tech role on <span>rjobs</span>
+                </h2>
+                <p className="agentforge-portal-text">
+                  Every SME opportunity that comes through the AgentForge Talent Engine is published on
+                  our dedicated job portal, <strong>rjobs</strong>. Candidates browse and apply to live
+                  entry-level AI, data and automation roles with their Work-Sample portfolio attached &mdash;
+                  no CV-first filtering. SMEs post a role, set a challenge and review work-validated
+                  talent from the same place.
+                </p>
+                <ul className="agentforge-portal-list">
+                  <li><i className="bi bi-check-circle-fill"></i> Live entry-level roles from SMEs adopting frontier technology</li>
+                  <li><i className="bi bi-check-circle-fill"></i> Apply with demonstrated work, not just a CV</li>
+                  <li><i className="bi bi-check-circle-fill"></i> Free for candidates &mdash; free for SMEs to post a challenge-backed role</li>
+                </ul>
+              </div>
+
+              <div className="col-lg-5">
+                <div className="agentforge-portal-panel">
+                  <div className="agentforge-portal-browser" aria-hidden="true">
+                    <span></span><span></span><span></span>
+                    <div className="agentforge-portal-url">
+                      <i className="bi bi-lock-fill"></i> www.rjobs.co.uk
+                    </div>
+                  </div>
+                  <p className="agentforge-portal-panel-label">The AgentForge job portal</p>
+                  <a
+                    href="https://www.rjobs.co.uk"
+                    className="agentforge-portal-btn"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <i className="bi bi-briefcase-fill"></i>
+                    Visit rjobs.co.uk
+                    <i className="bi bi-arrow-up-right"></i>
+                  </a>
+                  <p className="agentforge-portal-note">
+                    Opens in a new tab at{' '}
+                    <a href="https://www.rjobs.co.uk" target="_blank" rel="noopener noreferrer">
+                      www.rjobs.co.uk
+                    </a>
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* IMPACT */}
       <section id="impact" className="agentforge-impact section light-background">
         <div className="container">
@@ -431,6 +500,14 @@ const AgentForge = () => {
                 <i className="bi bi-mortarboard" style={{ display: 'block', margin: '0 auto' }}></i>
                 <h3>For Candidates</h3>
                 <p>Complete real challenges, build your Work-Sample portfolio, and get matched to a local SME.</p>
+                <a
+                  href="https://www.rjobs.co.uk"
+                  className="agentforge-inline-link"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  See live roles on rjobs.co.uk <i className="bi bi-arrow-up-right"></i>
+                </a>
               </div>
             </div>
           </div>
@@ -683,6 +760,207 @@ const AgentForge = () => {
           max-width: 380px;
           height: auto;
         }
+
+        /* ---------- Job Portal (rjobs.co.uk) ---------- */
+        .agentforge-hero-portal-link {
+          display: inline-flex;
+          align-items: center;
+          gap: 8px;
+          padding: 12px 24px;
+          border-radius: 50px;
+          font-size: 15px;
+          font-weight: 500;
+          color: #cdeff3;
+          background: rgba(255, 255, 255, 0.06);
+          border: 1px solid rgba(158, 238, 242, 0.35);
+          transition: 0.3s;
+        }
+        .agentforge-hero-portal-link strong { color: #ffffff; font-weight: 700; }
+        .agentforge-hero-portal-link i:first-child { color: #5ED1DD; }
+        .agentforge-hero-portal-link i:last-child { font-size: 13px; transition: 0.3s; }
+        .agentforge-hero-portal-link:hover {
+          color: #ffffff;
+          background: rgba(94, 209, 221, 0.16);
+          border-color: #5ED1DD;
+          transform: translateY(-2px);
+        }
+        .agentforge-hero-portal-link:hover i:last-child { transform: translate(2px, -2px); }
+
+        .agentforge-portal-card {
+          position: relative;
+          overflow: hidden;
+          padding: 56px 48px;
+          border-radius: 22px;
+          background: radial-gradient(120% 160% at 12% 0%, #2a1660 0%, #14092e 50%, #05030f 100%);
+          box-shadow: 0 24px 60px rgba(20, 9, 46, 0.28);
+        }
+        @media (max-width: 768px) {
+          .agentforge-portal-card { padding: 38px 24px; }
+        }
+        .agentforge-portal-glow {
+          position: absolute;
+          top: -140px;
+          right: -120px;
+          width: 420px;
+          height: 420px;
+          border-radius: 50%;
+          background: radial-gradient(circle, rgba(94, 209, 221, 0.28) 0%, transparent 70%);
+          pointer-events: none;
+        }
+
+        .agentforge-portal-eyebrow {
+          display: inline-flex;
+          align-items: center;
+          gap: 8px;
+          padding: 7px 16px;
+          border-radius: 30px;
+          font-size: 12.5px;
+          font-weight: 700;
+          letter-spacing: 0.8px;
+          text-transform: uppercase;
+          color: #9EEEF2;
+          background: color-mix(in srgb, #5ED1DD, transparent 88%);
+          border: 1px solid color-mix(in srgb, #5ED1DD, transparent 65%);
+          margin-bottom: 20px;
+        }
+        .agentforge-portal-eyebrow i { color: #5ED1DD; }
+
+        .agentforge-portal-title {
+          font-family: var(--heading-font);
+          font-size: 38px;
+          font-weight: 800;
+          color: #ffffff;
+          margin-bottom: 16px;
+          line-height: 1.25;
+        }
+        .agentforge-portal-title span {
+          background: linear-gradient(90deg, #5ED1DD, #9EEEF2);
+          -webkit-background-clip: text;
+          background-clip: text;
+          color: transparent;
+        }
+        @media (max-width: 768px) {
+          .agentforge-portal-title { font-size: 28px; }
+        }
+        .agentforge-portal-text {
+          color: color-mix(in srgb, #ffffff, transparent 25%);
+          font-size: 16px;
+          margin-bottom: 22px;
+          max-width: 620px;
+        }
+        .agentforge-portal-text strong { color: #ffffff; }
+
+        .agentforge-portal-list { list-style: none; padding: 0; margin: 0; }
+        .agentforge-portal-list li {
+          display: flex;
+          align-items: flex-start;
+          gap: 10px;
+          padding-bottom: 11px;
+          color: color-mix(in srgb, #ffffff, transparent 22%);
+          font-size: 15px;
+        }
+        .agentforge-portal-list i { color: #5ED1DD; margin-top: 4px; flex-shrink: 0; }
+
+        .agentforge-portal-panel {
+          padding: 28px 26px 24px 26px;
+          border-radius: 18px;
+          text-align: center;
+          background: rgba(255, 255, 255, 0.06);
+          border: 1px solid rgba(255, 255, 255, 0.14);
+          backdrop-filter: blur(6px);
+        }
+        .agentforge-portal-browser {
+          display: flex;
+          align-items: center;
+          gap: 6px;
+          padding: 9px 12px;
+          border-radius: 10px;
+          background: rgba(5, 3, 15, 0.55);
+          border: 1px solid rgba(255, 255, 255, 0.1);
+          margin-bottom: 22px;
+        }
+        .agentforge-portal-browser > span {
+          width: 9px;
+          height: 9px;
+          border-radius: 50%;
+          background: rgba(255, 255, 255, 0.22);
+          flex-shrink: 0;
+        }
+        .agentforge-portal-url {
+          flex: 1;
+          margin-left: 8px;
+          padding: 5px 12px;
+          border-radius: 20px;
+          background: rgba(255, 255, 255, 0.08);
+          font-size: 13.5px;
+          font-weight: 600;
+          color: #9EEEF2;
+          text-align: left;
+          white-space: nowrap;
+          overflow: hidden;
+          text-overflow: ellipsis;
+        }
+        .agentforge-portal-url i { font-size: 11px; margin-right: 6px; opacity: 0.75; }
+
+        .agentforge-portal-panel-label {
+          margin: 0 0 14px 0;
+          font-size: 12.5px;
+          font-weight: 600;
+          letter-spacing: 0.8px;
+          text-transform: uppercase;
+          color: color-mix(in srgb, #ffffff, transparent 45%);
+        }
+
+        .agentforge-portal-btn {
+          display: inline-flex;
+          align-items: center;
+          justify-content: center;
+          gap: 10px;
+          width: 100%;
+          padding: 14px 26px;
+          border-radius: 50px;
+          font-size: 16px;
+          font-weight: 700;
+          color: #0b1330;
+          background: linear-gradient(90deg, #5ED1DD, #9EEEF2);
+          box-shadow: 0 12px 28px rgba(94, 209, 221, 0.28);
+          transition: 0.3s;
+        }
+        .agentforge-portal-btn i:last-child { font-size: 14px; transition: 0.3s; }
+        .agentforge-portal-btn:hover {
+          color: #0b1330;
+          background: linear-gradient(90deg, #9EEEF2, #5ED1DD);
+          transform: translateY(-2px);
+          box-shadow: 0 16px 34px rgba(94, 209, 221, 0.4);
+        }
+        .agentforge-portal-btn:hover i:last-child { transform: translate(3px, -3px); }
+
+        .agentforge-portal-note {
+          margin: 14px 0 0 0;
+          font-size: 13px;
+          color: color-mix(in srgb, #ffffff, transparent 50%);
+        }
+        .agentforge-portal-note a {
+          color: #9EEEF2;
+          font-weight: 600;
+          text-decoration: underline;
+          text-underline-offset: 3px;
+        }
+        .agentforge-portal-note a:hover { color: #ffffff; }
+
+        .agentforge-inline-link {
+          display: inline-flex;
+          align-items: center;
+          gap: 6px;
+          margin-top: 6px;
+          font-size: 14.5px;
+          font-weight: 600;
+          color: var(--accent-color);
+          transition: 0.3s;
+        }
+        .agentforge-inline-link i { font-size: 13px; transition: 0.3s; }
+        .agentforge-inline-link:hover { color: #7147DC; }
+        .agentforge-inline-link:hover i { transform: translate(2px, -2px); }
       `}</style>
     </main>
   );
