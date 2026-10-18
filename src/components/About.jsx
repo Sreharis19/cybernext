@@ -1,6 +1,5 @@
 /* eslint-disable jsx-a11y/anchor-has-content */
 import React from 'react';
-import aboutImg1 from '../assets/img/about.jpg';
 import aboutImg2 from '../assets/img/inoovate.png';
 
 const About = () => {
@@ -11,12 +10,6 @@ const About = () => {
           {/* Left column */}
           <div className="col-lg-6" data-aos="fade-up" data-aos-delay="100">
             <h3>About Next AI Fusion</h3>
-            <img
-              src={aboutImg1}
-              className="img-fluid rounded-4 mb-4"
-              alt="About"
-            />
-
             <p>
               Next AI Fusion is CyberNext&apos;s agentic automation initiative – bringing
               together multi-agent AI, workflow orchestration and real-world
@@ -41,7 +34,7 @@ const About = () => {
           >
             <div className="content ps-0 ps-lg-5">
               <p className="fst-italic">
-                Innovate UK–funded SmartAirFusion &amp; our mission:
+                Our Innovate UK–funded projects &amp; mission:
               </p>
               <ul>
                 <li>
@@ -61,6 +54,17 @@ const About = () => {
                 </li>
                 <li>
                   <i className="bi bi-check-circle-fill"></i>{' '}
+                  Delivering <strong>AgentForge Talent Engine</strong>, which
+                  helps SMEs recruit entry-level AI talent through real,
+                  work-validated challenges – with live roles for candidates
+                  on our job portal,{' '}
+                  <a href="https://www.rjobs.co.uk" target="_blank" rel="noopener noreferrer">
+                    rjobs.co.uk
+                  </a>
+                  .
+                </li>
+                <li>
+                  <i className="bi bi-check-circle-fill"></i>{' '}
                   Turning this R&amp;D into practical learning and talent
                   pathways through Next AI Fusion – equipping operators,
                   engineers and technologists to design, deploy and govern
@@ -69,11 +73,10 @@ const About = () => {
               </ul>
 
               <p>
-                Backed by Innovate UK, SmartAirFusion is our first flagship
-                project under Next AI Fusion – a plug-and-play, agentic
-                AI platform that shows how intelligent automation can drive
-                real energy savings, new skills and Net Zero–aligned growth
-                for UK industry. NextAi Fusion is building on this foundation to
+                Backed by Innovate UK, SmartAirFusion and AgentForge show how
+                intelligent automation can drive real energy savings, new
+                skills and Net Zero–aligned growth for UK industry.{' '}
+                <a href="#projects">See our projects below</a>. NextAi Fusion is building on this foundation to
                 create a portfolio of agentic automation products and learning
                 experiences for the next generation of builders.
               </p>

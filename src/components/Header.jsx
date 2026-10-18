@@ -79,6 +79,11 @@ const Header = ({ sitename }) => {
               </a>
             </li>
             <li>
+              <a href="/#projects" onClick={handleNavClick}>
+                Projects
+              </a>
+            </li>
+            <li>
               <a href="/#services" onClick={handleNavClick}>
                 Services
               </a>

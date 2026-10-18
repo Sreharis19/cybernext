@@ -20,6 +20,7 @@ import Clients from './components/Clients';
 import Features from './components/Features';
 import Services from './components/Services';
 import Portfolio from './components/Portfolio';
+import InnovateProjects from './components/InnovateProjects';
 import Contact from './components/Contact';
 import Footer from './components/Footer';
 import ScrollTop from './components/ScrollTop';
@@ -33,6 +34,7 @@ function Home() {
     <main className="main">
       <Hero />
       <About />
+      <InnovateProjects />
       <Clients />
       <Features />
       <Services />
