@@ -1,6 +1,7 @@
 /* eslint-disable jsx-a11y/anchor-has-content */
 import React from 'react';
 import aboutImg2 from '../assets/img/inoovate.png';
+import AboutIllustration from './AboutIllustration';
 
 const About = () => {
   return (
@@ -10,6 +11,7 @@ const About = () => {
           {/* Left column */}
           <div className="col-lg-6" data-aos="fade-up" data-aos-delay="100">
             <h3>About Next AI Fusion</h3>
+            <AboutIllustration />
             <p>
               Next AI Fusion is CyberNext&apos;s agentic automation initiative – bringing
               together multi-agent AI, workflow orchestration and real-world

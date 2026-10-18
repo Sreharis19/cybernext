@@ -2,6 +2,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import innovateLogo from '../assets/img/inoovate.png';
 import smartAirPoster from '../assets/img/projects/smartairfusion-poster.jpg';
+import agentForgeLogo from '../assets/img/partners/agentforge-logo-white.png';
 
 const smartAirStats = [
   { value: '96.8%', label: 'Leak-detection accuracy' },
@@ -85,8 +86,11 @@ const InnovateProjects = () => (
         {/* AgentForge */}
         <div className="col-lg-6" data-aos="fade-up" data-aos-delay="200">
           <div className="innovate-project-card h-100 d-flex flex-column">
-            <span className="innovate-project-tag">TechFirst programme</span>
-            <h3>AgentForge Talent Engine</h3>
+            <div className="innovate-project-logo-band">
+              <img src={agentForgeLogo} alt="AgentForge Talent Engine" />
+            </div>
+            <span className="innovate-project-tag align-self-start">TechFirst programme</span>
+            <h3 className="visually-hidden">AgentForge Talent Engine</h3>
             <p className="innovate-project-subtitle">
               Bridging the UK&apos;s frontier-technology skills gap with work-validated hiring.
             </p>
@@ -140,7 +144,15 @@ const InnovateProjects = () => (
         border-radius: 50px;
         padding: 0.25rem 0.75rem;
       }
-      .innovate-project-subtitle { font-weight: 600; color: #444; }
+      .innovate-project-logo-band {
+        background: linear-gradient(135deg, #14172e 0%, #241a3d 100%);
+        border-radius: 0.75rem;
+        padding: 1.5rem 2rem;
+        margin-bottom: 1.25rem;
+        text-align: center;
+      }
+      .innovate-project-logo-band img { width: 100%; max-width: 320px; height: auto; }
+      .innovate-project-subtitle { font-weight: 600; color: #444; margin-top: 0.75rem; }
       .innovate-project-poster {
         display: block;
         position: relative;

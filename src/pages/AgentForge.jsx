@@ -9,6 +9,7 @@ import engineImg from '../assets/img/services-3.jpg';
 import impactImg from '../assets/img/working-4.jpg';
 
 import techfirstLogo from '../assets/img/partners/techfirst-lockup-black.png';
+import agentForgeLogo from '../assets/img/partners/agentforge-logo-white.png';
 
 const solutionTabs = [
   {
@@ -172,7 +173,9 @@ const AgentForge = () => {
               <span className="agentforge-badge">
                 <i className="bi bi-chevron-right"></i> Funded under the TechFirst programme
               </span>
-              <h1 className="mt-4">AgentForge Talent Engine</h1>
+              <h1 className="mt-4">
+                <img src={agentForgeLogo} alt="AgentForge Talent Engine" className="agentforge-hero-logo" />
+              </h1>
               <p className="agentforge-hero-subtitle">
                 Bridging the UK&apos;s frontier-technology skills gap — enabling SMEs to identify,
                 assess and recruit entry-level AI talent through Agentic AI-powered, work-validated
@@ -531,6 +534,7 @@ const AgentForge = () => {
           background: radial-gradient(120% 140% at 15% 10%, #2a1660 0%, #14092e 45%, #05030f 100%);
         }
         .agentforge-hero > .container { width: 100%; }
+        .agentforge-hero-logo { width: 100%; max-width: 560px; height: auto; }
         @media (max-width: 768px) {
           .agentforge-hero { min-height: unset; padding: 130px 0 70px 0; }
         }
