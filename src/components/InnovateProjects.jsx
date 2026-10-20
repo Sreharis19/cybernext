@@ -89,7 +89,7 @@ const InnovateProjects = () => (
             <div className="innovate-project-logo-band">
               <img src={agentForgeLogo} alt="AgentForge Talent Engine" />
             </div>
-            <span className="innovate-project-tag align-self-start">TechFirst programme</span>
+            <span className="innovate-project-tag align-self-start">TechFirst Local Fund grant recipient</span>
             <h3 className="visually-hidden">AgentForge Talent Engine</h3>
             <p className="innovate-project-subtitle">
               Bridging the UK&apos;s frontier-technology skills gap with work-validated hiring.
@@ -99,6 +99,19 @@ const InnovateProjects = () => (
               filtering CVs, candidates prove what they can do on real challenges co-developed with
               employers, delivered with Quantidium AI.
             </p>
+            <a
+              href="https://www.gov.uk/government/publications/techlocal/techfirst-local-fund-grant-recipients#next-ai-fusion-ltd"
+              className="innovate-project-grant"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <i className="bi bi-patch-check-fill"></i>
+              <span>
+                <strong>UK Government grant recipient</strong> – Next AI Fusion Ltd is listed on GOV.UK
+                as a TechFirst Local Fund recipient: 30 local jobs in the East of England.{' '}
+                <u>View on GOV.UK</u>
+              </span>
+            </a>
             <ul className="innovate-project-list">
               {agentForgeHighlights.map((h) => (
                 <li key={h}>
@@ -180,6 +193,20 @@ const InnovateProjects = () => (
       .innovate-project-stat strong { display: block; font-size: 1.4rem; color: #ff4a17; }
       .innovate-project-stat span { font-size: 0.85rem; color: #666; }
       .innovate-project-note { font-size: 0.8rem; font-style: italic; color: #777; }
+      .innovate-project-grant {
+        display: flex;
+        gap: 0.6rem;
+        align-items: flex-start;
+        background: rgba(255, 74, 23, 0.06);
+        border-left: 3px solid #ff4a17;
+        border-radius: 0.5rem;
+        padding: 0.75rem 1rem;
+        margin-bottom: 1rem;
+        font-size: 0.9rem;
+        color: #444;
+      }
+      .innovate-project-grant i { color: #ff4a17; font-size: 1.2rem; line-height: 1.2; }
+      .innovate-project-grant:hover { color: #222; background: rgba(255, 74, 23, 0.1); }
       .innovate-project-list { list-style: none; padding: 0; }
       .innovate-project-list li { padding: 0.35rem 0 0.35rem 1.75rem; position: relative; }
       .innovate-project-list i { position: absolute; left: 0; top: 0.35rem; color: #ff4a17; font-size: 1.2rem; }

@@ -171,7 +171,7 @@ const AgentForge = () => {
           <div className="row justify-content-center text-center">
             <div className="col-lg-9" data-aos="fade-up">
               <span className="agentforge-badge">
-                <i className="bi bi-chevron-right"></i> Funded under the TechFirst programme
+                <i className="bi bi-chevron-right"></i> TechFirst Local Fund grant recipient
               </span>
               <h1 className="mt-4">
                 <img src={agentForgeLogo} alt="AgentForge Talent Engine" className="agentforge-hero-logo" />
@@ -474,6 +474,30 @@ const AgentForge = () => {
               alt="Funded by UK Government — TechFirst"
               className="agentforge-funding-logo"
             />
+            <div className="agentforge-grant">
+              <span className="agentforge-grant-label">
+                <i className="bi bi-patch-check-fill"></i> UK Government grant recipient
+              </span>
+              <p>
+                Next AI Fusion Ltd is an official recipient of the <strong>TechFirst Local Fund
+                (TechLocal)</strong> for AgentForge Talent Engine, giving East of England businesses
+                simpler agentic AI tools and training 30 local people to manage and check them,
+                creating entry-level roles that would not otherwise exist.
+              </p>
+              <ul className="agentforge-grant-facts">
+                <li><strong>East of England</strong><span>Region</span></li>
+                <li><strong>30</strong><span>Local jobs created</span></li>
+                <li><strong>2026</strong><span>First competition</span></li>
+              </ul>
+              <a
+                href="https://www.gov.uk/government/publications/techlocal/techfirst-local-fund-grant-recipients#next-ai-fusion-ltd"
+                className="agentforge-inline-link"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                View the official grant recipients list on GOV.UK <i className="bi bi-arrow-up-right"></i>
+              </a>
+            </div>
           </div>
         </div>
       </section>
@@ -764,6 +788,41 @@ const AgentForge = () => {
           max-width: 380px;
           height: auto;
         }
+        .agentforge-grant {
+          max-width: 720px;
+          margin: 32px auto 0;
+          padding-top: 28px;
+          border-top: 1px solid color-mix(in srgb, var(--default-color), transparent 90%);
+        }
+        .agentforge-grant-label {
+          display: inline-flex;
+          align-items: center;
+          gap: 6px;
+          margin-bottom: 14px;
+          font-size: 13px;
+          font-weight: 600;
+          letter-spacing: 0.5px;
+          text-transform: uppercase;
+          color: #7147DC;
+        }
+        .agentforge-grant p { font-size: 15.5px; margin-bottom: 20px; }
+        .agentforge-grant-facts {
+          display: flex;
+          flex-wrap: wrap;
+          justify-content: center;
+          gap: 12px;
+          list-style: none;
+          padding: 0;
+          margin: 0 0 18px 0;
+        }
+        .agentforge-grant-facts li {
+          min-width: 150px;
+          padding: 12px 18px;
+          border-radius: 12px;
+          background: color-mix(in srgb, #7147DC, transparent 92%);
+        }
+        .agentforge-grant-facts strong { display: block; font-size: 18px; color: #7147DC; }
+        .agentforge-grant-facts span { font-size: 13px; color: color-mix(in srgb, var(--default-color), transparent 35%); }
 
         /* ---------- Job Portal (rjobs.co.uk) ---------- */
         .agentforge-hero-portal-link {
